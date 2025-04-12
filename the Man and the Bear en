@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>the Man and the Bear</title>
+  <style>
+    /* استایل اصلی برای نمایش A4 در مرورگر */
+    .a4-page {
+      width: 21cm;
+      min-height: 29.7cm;
+      height: auto;
+      margin: 1cm auto;
+      padding: 2.5cm;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      background: white;
+      box-sizing: border-box;
+      page-break-after: always; /* برای ایجاد صفحه جدید در چاپ */
+    }
+    
+    /* آخرین صفحه نباید page-break-after داشته باشد */
+    .a4-page:last-child {
+      page-break-after: auto;
+      margin-bottom: 0;
+    }
+    
+    /* استایل برای چاپ */
+    @page {
+      size: A4 portrait;
+      margin: 2.5cm;
+    }
+
+    @media print {
+      body {
+        background: white;
+        margin: 0;
+        padding: 0;
+      }
+      
+      .a4-page {
+        box-shadow: none;
+        margin: 0;
+        padding: 0;
+        width: 21cm;
+        min-height: 29.7cm;
+        height: auto;
+      }
+    }
+
+    /* استایل‌های محتوا */
+    body {
+      font-family: "Vazirmatn", sans-serif;
+      line-height: 2;
+      background-color: #f0f0f0;
+      color: #222;
+      margin: 0;
+      padding: 20px 0;
+      direction: left;
+    }
+
+    h1, h2 {
+      color: #006400;
+      text-align: center;
+    }
+
+    blockquote {
+      border-right: 4px solid #ccc;
+      margin: 1em 0;
+      padding-right: 1em;
+      color: #666;
+      font-style: italic;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-style: italic;
+      color: #555;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <!-- صفحه اول -->
+  <div class="a4-page">
+    <h1>The Bear and the Man</h1>
+    <p>    It was close to sunset, and golden rays of the sun filtered through the branches, casting a warm and calming light on the ground. A man, who had worked all day in the rice field, laid down his sickle, took out a handkerchief, wiped the sweat off his forehead, and sighed with satisfaction. It was time to end the work and return home.</p>
+  
+    <p>    The way back passed through a narrow and winding path surrounded by tall walnut and oak trees. A gentle breeze danced through the branches, rustling the leaves into a rhythmic motion. Midway, the man's eyes caught a walnut tree heavy with ripe fruit...</p>
+  
+    <p>    The air was filled with the scent of wood and walnuts. The man, tired and hungry, decided to rest. He leaned against the trunk, took off his shoes, and sat for a moment in the shade. But the temptation of the walnuts didn’t let him rest long. He quickly climbed the tree, picked a few walnuts, cracked them, and enjoyed the sweet kernels...</p>
+  
+    <p>    Night fell. The sky was full of stars and the full moon painted a dreamlike scene. In the silence, a rustling noise startled the man awake. He listened carefully and saw a large shadow moving below. A moment later, he realized it was a bear, sitting under the tree, unaware of his presence, eating the walnuts...</p>
+  
+    <p>    The bear, out of habit, held the walnuts up to the moonlight to check if they were good before eating. From up in the tree, the sleepy man, half-aware of what was happening, thought the bear was offering him walnuts! He smiled and said:</p>
+  
+    <blockquote>Thanks, I’ve had enough. I’m full now.</blockquote>
+  
+    <p>    The bear, startled by the human voice, panicked. Though strong, he was scared by the unexpected sound above. He lost his balance, slipped on a stone, and fell from the height.</p>
+  
+    <p>    At dawn, the man woke up and looked down to see the bear’s lifeless body. He sighed in relief, gathered some more walnuts, climbed down, and walked back to the rice field with a smile.</p>
+  
+    <blockquote>Sometimes, just a "thank you" is enough to survive the night.</blockquote>
+  
+    <footer>From the folk tales of Gilan</footer>
+  </div>
+  
+  <!-- صفحه دوم (به صورت خودکار یا دستی اضافه می‌شود) -->
+  <div class="a4-page">
+    <!-- محتوای صفحه دوم -->
+  </div>
+  
+  <!-- صفحات بعدی به همین صورت اضافه می‌شوند -->
+</body>
+</html>
